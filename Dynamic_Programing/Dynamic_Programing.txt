@@ -1,0 +1,22 @@
+
+-->. Memoization Recipe:
+1. Make it work:
+  --First, large problem make it smaller, 
+    and visualize as a tree
+   --Implement the tree using recursion(either upward or downward)
+
+    NB:How do you visualize the tree ? Here tree leaf is the base case
+       of the tree. Incase, it is type of fibbonacci , then n equal 
+    one or n eqaul two.Now when you have baseline recursion, that's 
+    going to your bruteforce.
+
+
+
+
+2. Make it efficient:
+--Add a memo object
+--add a base case to return memo values
+--store return vlaues into the memeo
+
+--->We will be sure to follow these rules for falling problems.
+
