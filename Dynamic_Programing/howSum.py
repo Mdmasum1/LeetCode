@@ -1,0 +1,3 @@
+
+def howSum(targerSum, numbers):
+    
