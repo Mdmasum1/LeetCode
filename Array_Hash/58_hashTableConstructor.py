@@ -42,8 +42,21 @@ class HashTable:
         self.data_map[index].append([key, value])
 
 
-    #Implementation of get method
-    def get_item():
+    #Implementation of get_item method
+    def get_item(self, key):
+        #initialize variable index and set to hash function set to key
+        index = self._hash(key)
+
+        #Checking it is in the input array
+        if self.data_map[index] is not None:
+            for i in range(len(self.data_map[index])):
+
+                if self.data_map[index][i][0] == key:
+
+                   return self.data_map[index][i][1]
+            
+        return None
+
         
 
 
@@ -53,7 +66,12 @@ my_hash_table.set_item('mango', [])
 my_hash_table.set_item('apple', 100)
 my_hash_table.set_item('lemon', 50)
 
-my_hash_table.print_table()
+print(my_hash_table.get_item('mango'))
+print(my_hash_table.get_item('apple'))
+print(my_hash_table.get_item('lemon'))
+
+
+#my_hash_table.print_table()
 
 
     
