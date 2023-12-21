@@ -3,18 +3,22 @@
 
 class HashTable:
 
+    #NB: Prime number increases the randomness of the key-val pair. It is better 
+    # remove the prime number from the end reducing collision
+
     #Constructor
     def __init__(self, size= 7):
-        #Initialize the NOne for the size of hash table
+        #Initialize data_map variable to None for the size of hash table
         self.data_map = [None] * size
 
     #Implement hash method
     def _hash(self, key):
+        #create my_hash variable set to 0
         my_hash = 0
 
         #Looping throuhg the key
         for letter in key:
-            #Calculation of the hash fucntion  using ord function and prime number
+            #Calculation of the hash fucntion  using ord function and multiply prime number
             my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
 
         #return the hash
@@ -26,9 +30,29 @@ class HashTable:
         for i,val in enumerate(self.data_map):
             print(i, ": ", val)
 
+    #implemet set_item method
+    def set_item(self, key, value):
+        #Initialize index variable and set to hash function
+        index = self._hash(key)
+
+        #Checking if it is none, then index set to empty list
+        if self.data_map[index] == None:
+            self.data_map[index] = []
+
+        self.data_map[index].append([key, value])
+
+
+    #Implementation of get method
+    def get_item():
+        
 
 
 my_hash_table = HashTable()
+
+my_hash_table.set_item('mango', [])
+my_hash_table.set_item('apple', 100)
+my_hash_table.set_item('lemon', 50)
+
 my_hash_table.print_table()
 
 
