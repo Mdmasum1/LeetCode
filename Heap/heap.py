@@ -33,6 +33,30 @@ class Heap():
         self.heap.append(value)
         self.heapify_up(len(self.heap) - 1)
 
+    #Implementation of remove method
+    def remove(self):
+        #Base case
+        if len(self.heap) == 0:
+            return None
+        #if heap is not none then remove element from the top
+        if len(self.heap) == 1:
+            return self.heap.pop()
+
+        #Top element of heap store as max_value
+        max_value = self.heap[0]
+        
+        if max_value == -1:
+            return
+        #Now, pop from end of the heap and store it to top of the heap
+        self.heap[0] = self.heap.pop()
+        #Re-arrange the heap by calling heapify_down method to maintain
+        #the heap property
+        self.heapify_down(0)
+
+        return max_value
+
+
+
     def delete(self, value):
         if len(self.heap) == 0:
             return

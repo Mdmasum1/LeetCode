@@ -33,3 +33,4 @@ result = howSum(target, nums)
 print(f"Numbers that sum up to {target}: {result}")
 
 #Output: Numbers that sum up to 7: [3,2, 2]
+#NB: need to look back alvin's complexity explaiantion of this program
