@@ -55,4 +55,7 @@ result = topKFrequent(nums1, k)
 print(f"The {k} most frequent elements are: {result}")
 
 
-        
+#Time: O(klogk) ; extracting the k most frequent elements from the
+#heap
+#Space:O(N)     ; Storing the frquency counts in the Cpunter
+#and Oa9k) for maintaining the heap of k elements
