@@ -5,3 +5,14 @@
 #Print each piece of information stored in your dictionary
 
 
+person = {
+    'first_name': "md",
+    'last_name': "billah",
+    'age': 39,
+    'city': "Austin",
+}
+
+print(person["first_name"])
+print(person['last_name'])
+print(person['age'])
+print(person['city'])
