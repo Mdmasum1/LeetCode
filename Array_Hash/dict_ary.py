@@ -103,6 +103,63 @@ print(f"\n{word.title()}: {glossary[word]}")
 word = 'dictionary'
 print(f"\n{word.title()}: {glossary[word]}")
 
+################################
+#favorite_numbers_6_10.py
+'''
+---MOdify the program from previous. Each person can have more than one
+---favorite number. Then print each person's name along with their 
+---favorite numbers.
+
+'''
+
+favorite_numbers = {
+    'babu' : [42, 17],
+    'masum' : [42,39, 56],
+    'billah'  : [7, 19]
+
+}
+
+for name, numbers in favorite_numbers.items():
+    print(f"\n{name.title()} likes the following numbers: ")
+    for number in numbers:
+        print(f" {number}")
+
+
+############################
+#favorite_places.py
+'''
+Make dictionary called favorite_places. Think of three names to use as key
+in the dictionary, and store one to three places for each person.
+To make this exercise a bit more interesting ask some freinds to name a
+few of their places. Loop through the dictionary, and print 
+each persons name and their favorite places
+
+'''
+
+favorite_numbers = {
+    'Montu' : ['Dhaka', 'Burigonga'],
+    'Minu': ['Coxs Bazar', 'hatoya'],
+    'Miku' : ['Malasia', 'Kulalampur']
+
+
+}
+
+for name, places in favorite_numbers.items():
+    print(f"\n{name.title()} likes the following places: ")
+    for place in places:
+        print(f"- {place.title()}")
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
