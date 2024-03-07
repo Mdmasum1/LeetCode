@@ -34,10 +34,11 @@ class Solution:
             #Initialize 0 with all 26 alphabets
             count = [0] * 26
             for c in s:
-                #Increment the count
+                #Increment the vlaue of the count
                 count[ord(c) - ord("a")] += 1
             
             #Using tuple instead of list because tuple is immutable
+            #and append s to the ans
             ans[tuple(count)].append(s)
 
         #Return the value of the dictionary
