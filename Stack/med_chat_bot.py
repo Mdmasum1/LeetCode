@@ -23,8 +23,9 @@
 
 # In[2]:
 
-
+#  %%
 pip install spacy==3.7.2
+
 
 
 # Once you run this cell, you may be prompted to reload the notebook. This will only need to be done one time on the machine.
@@ -37,9 +38,10 @@ pip install spacy==3.7.2
 
 # In[3]:
 
-
+# %%
 import spacy
 
+# %%
 spacy.cli.download('en_core_web_sm')
 
 
