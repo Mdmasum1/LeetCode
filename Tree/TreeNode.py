@@ -1,4 +1,7 @@
 
+
+from typing import List
+
 #Every tree has common class TreeNode
 class TreeNode:
 
@@ -7,4 +10,3 @@ class TreeNode:
         self.val= val
         self.left= left
         self.right = right 
-        
