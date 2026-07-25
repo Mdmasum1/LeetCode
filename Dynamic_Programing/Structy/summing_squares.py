@@ -65,4 +65,29 @@ def _summing_squares(n, memo):
     # return the min_squares as the answer
   return min_squares
 
-    
+
+# ------------------ Test Cases ------------------
+
+# if __name__ == "__main__":
+
+#     test_cases = [0, 1, 2, 4, 7, 12, 13, 17, 25, 43]
+
+#     for n in test_cases:
+#         print(f"summing_squares({n}) = {summing_squares(n)}")
+
+
+##############################################################
+
+#   OR if you prefer individual test cases
+
+if __name__ == "__main__":
+    print(summing_squares(0))   # Expected: 0
+    print(summing_squares(1))   # Expected: 1
+    print(summing_squares(2))   # Expected: 2
+    print(summing_squares(4))   # Expected: 1
+    print(summing_squares(7))   # Expected: 4
+    print(summing_squares(12))  # Expected: 3
+    print(summing_squares(13))  # Expected: 2
+    print(summing_squares(17))  # Expected: 2
+    print(summing_squares(25))  # Expected: 1
+    print(summing_squares(43))  # Expected: 3
